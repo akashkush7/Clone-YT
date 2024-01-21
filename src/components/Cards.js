@@ -3,8 +3,8 @@ import Image from "next/image"
 const Cards = (props) => {
     return (
         <>
-            <div className="card m-4" style={{ width: "400px" }}>
-                <img src={props.imgsrc} className="card-img-top overflow-hidden" height='400' alt={props.title} />
+            <div className="card m-4" style={{ width: "400px", maxBlockSize: "max-width" }}>
+                <img src={props.imgsrc} className="card-img-top overflow-hidden" maxheight='400' alt={props.title} />
                 <div className="card-body">
                     <h5 className="card-title">{props.title}</h5>
                     <p className="card-text">{props.about}</p>
